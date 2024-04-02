@@ -1,66 +1,81 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Home</title>
-        <link rel="stylesheet" href="index.css">
-      </head>
-      <body id="body">
-        <div id="main">
-            <div id="list">
-                <div id="homeTab" class="listitem">Home</div>
-                <div id="projectsTab" class="listitem">Projects</div>
-                <div id="aboutTab" class="listitem">About</div>
-            </div>
-            <div id="page">
-                <div id="intro" class="pageitem">
-                    <div id="introTitle" class="pageTitle">John Brisebois</div>
-                    <div id="introInfo" class="pageInfo">Welcome to my very cool website</div>
-                    <div id="introBody" class="pageBody">
-                        Please scroll down.  Also the tabs don't work rn.
-                    </div>
-                </div>
-                <div id="projectsPage" class="pageitem">
-                    <div id="projectsTitle" class="pageTitle">Projects</div>
-                    <div id="projectsInfo" class="pageInfo">
-                        Some of my more notable projects.  See the projects tab above for more.
-                    </div>
-                    <div id="projectsBody" class="pageBody">
-                        <div id="mordProj" class="projectsItem">
-                            <div>
-                                MordhauMacro
-                            </div>
-                            <a href="https://johnjonathonson.github.io/">
-                                <img class="thumbnail" src="thumb_mord.jpg">
-                            </a>
-                        </div>
-                        <div id="clueProj"  class="projectsItem">
-                            <div>
-                                Clue Board Game
-                            </div>
-                            <a href="https://github.com/JohnBrisebois/CLUE-The-Great-Museum-Caper">
-                                <img class="thumbnail" src="thumb_clue.jpg">
-                            </a>
-                        </div>
-                        <div id="assemblyProj" class="projectsItem">
-                            <div>
-                                Assembly Runner
-                            </div>
-                            <a href="https://github.com/JohnBrisebois/assembly-runner">
-                                <img class="thumbnail" src="thumb_assembly.jpg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div id="aboutPage" class="pageitem">
-                    <div id="aboutTitle" class="pageTitle">About Me</div>
-                    <div id="aboutInfo" class="pageInfo">Aspiring software engineer, student of computer science.</div>
-                    <div id="aboutBody" class="pageBody">
-                        This is where ill write an about me
-                    </div>
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="magick.css">
+</head>
+
+<body id="body">
+    <div id="background">
+        <img src="sp.png">
+    </div>
+    <div id="list">
+        <p id="nameTab" class="tabRow listitem">John Brisebois</p>
+        <div id="infoList" class="tabRow">
+            <div id="centered">
+                <h3 id="homeTab" class="listitem">Home</h3>
+                <h3 id="projectsTab" class="listitem">Projects</h3>
+                <h3 id="aboutTab" class="listitem">About</h3>
             </div>
         </div>
-        <div id="background"></div>
-        <script src="main.js" charset="utf-8"></script>
-      </body>
+    </div>
+    <div id="main">
+        <div id="updown">
+            <div id="up" class="arrow">
+                <img src="up.png">
+            </div>
+            <div id="down" class="arrow">
+                <img src="down.png">
+            </div>
+        </div>
+        <section id="page">
+            <div id="intro" class="pageitem">
+                <h2 id="introTitle" class="pageTitle">John Brisebois</h2>
+                <h4 id="introInfo" class="pageInfo">Welcome to my very cool website</h4>
+                <div id="introBody" class="pageBody">
+                    Please scroll down. Also the tabs don't work rn.
+                </div>
+            </div>
+            <div id="projectsPage" class="pageitem">
+                <h2 id="projectsTitle" class="pageTitle">Projects</h2>
+                <h4 id="projectsInfo" class="pageInfo">
+                    Some of my more notable projects.
+                </h4>
+                <div id="projectsBody" class="pageBody">
+                    <div id="buttonCont" class="buttonCont">
+                        <button class="button">Mordhau Macro</button>
+                        <p class="buttonInfo">
+                            Online tool for coordinating strategies in the video game "Mordhau"
+                        </p>
+
+                        <button class="button">Clue Board Game</button>
+                        <p class="buttonInfo">
+                            Online multiplayer board game "CLUE: the Great Museum Caper"
+                        </p>
+
+                        <button class="button">Assembly Runner</button>
+                        <p class="buttonInfo">
+                            Sidescroller video game made entirely in MIPS assembly language
+                        </p>
+                        <button class="button">More</button>
+                        <p class="buttonInfo">
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="aboutPage" class="pageitem">
+                <h2 id="aboutTitle" class="pageTitle">About Me</h2>
+                <h4 id="aboutInfo" class="pageInfo">Aspiring software engineer, student of computer science.</h4>
+                <div id="aboutBody" class="pageBody">
+                    This is where ill write an about me
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="main.js" charset="utf-8"></script>
+</body>
+
 </html>
