@@ -1,10 +1,66 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Homepage</title>
+        <title>Home</title>
         <link rel="stylesheet" href="index.css">
       </head>
-      <body>
-        <div id="check">hello</div>
+      <body id="body">
+        <div id="main">
+            <div id="list">
+                <div id="homeTab" class="listitem">Home</div>
+                <div id="projectsTab" class="listitem">Projects</div>
+                <div id="aboutTab" class="listitem">About</div>
+            </div>
+            <div id="page">
+                <div id="intro" class="pageitem">
+                    <div id="introTitle" class="pageTitle">John Brisebois</div>
+                    <div id="introInfo" class="pageInfo">Welcome to my very cool website</div>
+                    <div id="introBody" class="pageBody">
+                        Please scroll down.  Also the tabs don't work rn.
+                    </div>
+                </div>
+                <div id="projectsPage" class="pageitem">
+                    <div id="projectsTitle" class="pageTitle">Projects</div>
+                    <div id="projectsInfo" class="pageInfo">
+                        Some of my more notable projects.  See the projects tab above for more.
+                    </div>
+                    <div id="projectsBody" class="pageBody">
+                        <div id="mordProj" class="projectsItem">
+                            <div>
+                                MordhauMacro
+                            </div>
+                            <a href="https://johnjonathonson.github.io/">
+                                <img class="thumbnail" src="thumb_mord.jpg">
+                            </a>
+                        </div>
+                        <div id="clueProj"  class="projectsItem">
+                            <div>
+                                Clue Board Game
+                            </div>
+                            <a href="https://github.com/JohnBrisebois/CLUE-The-Great-Museum-Caper">
+                                <img class="thumbnail" src="thumb_clue.jpg">
+                            </a>
+                        </div>
+                        <div id="assemblyProj" class="projectsItem">
+                            <div>
+                                Assembly Runner
+                            </div>
+                            <a href="https://github.com/JohnBrisebois/assembly-runner">
+                                <img class="thumbnail" src="thumb_assembly.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="aboutPage" class="pageitem">
+                    <div id="aboutTitle" class="pageTitle">About Me</div>
+                    <div id="aboutInfo" class="pageInfo">Aspiring software engineer, student of computer science.</div>
+                    <div id="aboutBody" class="pageBody">
+                        This is where ill write an about me
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="background"></div>
+        <script src="main.js" charset="utf-8"></script>
       </body>
 </html>
