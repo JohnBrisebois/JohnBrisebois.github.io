@@ -8,7 +8,7 @@
 }
 
 .pageTitle {
-    padding-top: 20px;
+    padding-top: 0px;
     font-size: 70;
 }
 
@@ -74,7 +74,7 @@ a:active { text-decoration: none; }
     width: 1400px;
     display: grid;
     margin: auto;
-    padding-top: 125px;
+    padding-top: 155px;
 }
 
 .tabRow {
@@ -128,20 +128,21 @@ a:active { text-decoration: none; }
 .buttonCont {
     display: grid;
     grid-template-columns: 250px;
+    grid-template-rows: 100px 100px 100px 100px;
 }
 
 .button {
     display: grid;
     font-size: 30;
     width: 250px;
-    height: 125px;
+    height: 100px;
 }
 
 .buttonInfo {
     grid-column-start: 2;
     width: 500px;
     height: 80px;
-    padding-top: 20px;
+    padding-top: 10px;
     justify-content: left;
 }
 
@@ -153,7 +154,7 @@ a:active { text-decoration: none; }
 
 .buttonText {
     margin: auto;
-    padding: 30px;
+    padding: 20px;
 }
 
 #updown {

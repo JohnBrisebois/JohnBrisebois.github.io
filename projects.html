@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8" />
     <title>Projects</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="magick.css">
@@ -9,7 +9,7 @@
 
 <body>
     <div id="background">
-        <img src="sp.png">
+        <img id="sp" src="sp.png">
     </div>
     <div id="list">
         <a href="https://www.johnbrisebois.com/" id="nameTab" class="tabRow listitem">John Brisebois</a>
@@ -35,70 +35,118 @@
         <h4>Here you can find my previous projects</h4>
         <div class="projectDiv">
             <div class="projectImg">
-                <img src = thumb_mord.jpg class="pImg">
-                <img src = polaroid.png class="pPolaroid">
+                <img src=thumb_mord.jpg class="pImg">
+                <img src=polaroid.png class="pPolaroid">
                 <h4 class="pTitle">Mordhau Macro</h4>
             </div>
             <div class="projectInfo">
                 <h2>Mordhau Macro</h2>
                 <p>
-                    Visualization tool for the online multiplayer game Mordhau that enables coaches to communicate positional strategies with players. The tool was created to address a need in the competitive Mordhau community and has seen real-world production use. Technologies used: JavaScript, HTML, CSS
+                    Visualization tool for the online multiplayer game Mordhau that enables coaches to communicate
+                    positional strategies with players. The tool was created to address a need in the competitive
+                    Mordhau community and has seen real-world production use. Technologies used: JavaScript, HTML, CSS
                 </p>
             </div>
         </div>
         <div class="projectDiv">
             <div class="projectImg">
-                <img src = thumb_assembly.jpg class="pImg">
-                <img src = polaroid.png class="pPolaroid">
+                <img src=thumb_assembly.jpg class="pImg">
+                <img src=polaroid.png class="pPolaroid">
                 <h4 class="pTitle">Assembly Runner</h4>
             </div>
             <div class="projectInfo">
                 <h2>Assembly Runner</h2>
                 <p>
-                    MIPS Assembly Language based side-scroller video game with keyboard inputs and pixel display. Technologies used: MIPS Assembly, MARS bitmap display, MARS I/O simulator.
+                    MIPS Assembly Language based side-scroller video game with keyboard inputs and pixel display.
+                    Technologies used: MIPS Assembly, MARS bitmap display, MARS I/O simulator.
                 </p>
             </div>
         </div>
         <div class="projectDiv">
             <div class="projectImg">
-                <img src = thumb_clue.jpg class="pImg">
-                <img src = polaroid.png class="pPolaroid">
+                <img src=thumb_clue.jpg class="pImg">
+                <img src=polaroid.png class="pPolaroid">
                 <h4 class="pTitle">Clue Board Game</h4>
             </div>
             <div class="projectInfo">
                 <h2>Clue Board Game</h2>
                 <p>
-                    A turn based multiplayer online board game that uses Google Firebase backend services to store game states and allow for communication. Technologies used: JavaScript, HTML, CSS, Firebase
+                    A turn based multiplayer online board game that uses Google Firebase backend services to store game
+                    states and allow for communication. Technologies used: JavaScript, HTML, CSS, Firebase
                 </p>
             </div>
         </div>
         <div class="projectDiv">
             <div class="projectImg">
-                <img src = thumb_tool.jpg class="pImg">
-                <img src = polaroid.png class="pPolaroid">
+                <img src=thumb_tool.jpg class="pImg">
+                <img src=polaroid.png class="pPolaroid">
                 <h4 class="pTitle">Team Tool</h4>
             </div>
             <div class="projectInfo">
                 <h2>Team Tool</h2>
                 <p>
-                    Helpful organization tool for competitive organizers that keeps track of teams' performance in a number of sports and games. Technologies used: C++, Windows Forms GUI
+                    Helpful organization tool for competitive organizers that keeps track of teams' performance in a
+                    number of sports and games. Technologies used: C++, Windows Forms GUI
                 </p>
             </div>
         </div>
         <div class="projectDiv">
             <div class="projectImg">
-                <img src = thumb_stock.jpg class="pImg">
-                <img src = polaroid.png class="pPolaroid">
+                <img src=thumb_stock.jpg class="pImg">
+                <img src=polaroid.png class="pPolaroid">
                 <h4 class="pTitle">Stock Search</h4>
             </div>
             <div class="projectInfo">
                 <h2>Stock Search</h2>
                 <p>
-                    Flask based website that allows users to search stock performance through the Tiingo API.  Technologies used: JavaScript, HTML, CSS, Python, Flask, hosted on AWS
+                    Flask based website that allows users to search stock performance through the Tiingo API.
+                    Technologies used: JavaScript, HTML, CSS, Python, Flask, hosted on AWS
                 </p>
             </div>
         </div>
     </main>
+    <style>
+        @media (max-width: 1500px) {
+            #sp {
+                display: none;
+            }
+
+            #background {
+                border-bottom-right-radius: 0;
+                height: 100%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            #nameTab {
+                display: none;
+            }
+
+            #centered {
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            #list {
+                height: 50px;
+            }
+
+            .listItem {
+                width: 90px;
+            }
+
+            .listText {
+                font-size: 15;
+            }
+            .projectDiv, projectInfo {
+                display: inline;
+                max-width: 400px;
+            }
+            p {
+                width: 400px;
+            }
+        }
+    </style>
 </body>
 
 </html>
