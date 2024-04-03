@@ -9,7 +9,7 @@
 
 <body>
     <div id="background">
-        <img src="sp.png">
+        <img id="sp" src="sp.png">
     </div>
     <div id="list">
         <a href="https://www.johnbrisebois.com/" id="nameTab" class="tabRow listitem">John Brisebois</a>
@@ -37,6 +37,56 @@
             <h2>johncjb@ymail.com</h2>
         </div>
     </div>
+    <style>
+        @media (max-width: 1200px) {
+            #sp {
+                display: none;
+            }
+
+            #background {
+                border-bottom-right-radius: 0;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            #nameTab {
+                display: none;
+            }
+
+            #centered {
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            #list {
+                height: 50px;
+            }
+
+            .listItem {
+                width: 90px;
+            }
+
+            .listText {
+                font-size: 15;
+            }
+            .projectDiv, projectInfo, projectImg {
+                display: inline;
+                width: 100%;
+            }
+            p {
+                width: 100%;
+            }
+            .pTitle {
+                display: none;
+            }
+            #mainProjects {
+                width: 100%;
+            }
+
+        }
+    </style>
 </body>
 
 </html>
