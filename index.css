@@ -118,7 +118,7 @@ a:active { text-decoration: none; }
     text-align: right;
     top: 0px;
     right: 0px;
-    height: 1500px;
+    height: 120%;
     width: 4000px;
     background: linear-gradient(180deg, rgb(223, 221, 255) 0%, rgba(249,249,255,1) 100%);
     border-bottom-right-radius: 2000px;
@@ -232,6 +232,28 @@ a:active { text-decoration: none; }
 }
 
 #aboutP {
-    width: 500px;
+    width: fit-content;
+    max-width: 500px;
     text-align: justify;
+}
+
+.contactItem {
+    display: grid;
+    grid-template-columns: 64px 300px;
+    grid-template-rows: 70px;
+}
+
+.contactTxt {
+    padding-top: 15px;
+    grid-column-start: 2;
+    text-align: left;
+}
+
+.contactImg {
+    grid-column-start: 1;
+    width: 64px;
+}
+
+#sp {
+    height: 100%;
 }
