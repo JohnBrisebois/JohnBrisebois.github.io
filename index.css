@@ -15,12 +15,12 @@
 .pageInfo {
     position: relative;
     font-size: 35;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .pageBody {
     text-align: justify;
-    padding-top: 100px;
+    padding-top: 50px;
     width: 700px;
     font-size: 25;
     line-height: 120%;
