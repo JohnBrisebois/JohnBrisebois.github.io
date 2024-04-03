@@ -12,12 +12,21 @@
         <img src="sp.png">
     </div>
     <div id="list">
-        <p id="nameTab" class="tabRow listitem">John Brisebois</p>
+        <a href="index.html" id="nameTab" class="tabRow listitem">John Brisebois</a>
         <div id="infoList" class="tabRow">
             <div id="centered">
-                <h3 id="homeTab" class="listitem">Home</h3>
-                <h3 id="projectsTab" class="listitem">Projects</h3>
-                <h3 id="aboutTab" class="listitem">About</h3>
+                <a href="index.html" id="homeTab" class="listitem">
+                    <h3 class="listText">Home</h3>
+                </a>
+                <a href="projects.html" id="projectsTab" class="listitem">
+                    <h3 class="listText">Projects</h3>
+                </a>
+                <a href="about.html" id="aboutTab" class="listitem">
+                    <h3 class="listText">About</h3>
+                </a>
+                <a href="contact.html" id="contactTab" class="listitem">
+                    <h3 class="listText">Contact</h3>
+                </a>
             </div>
         </div>
     </div>
@@ -32,34 +41,62 @@
         </div>
         <section id="page">
             <div id="intro" class="pageitem">
-                <h2 id="introTitle" class="pageTitle">John Brisebois</h2>
-                <h4 id="introInfo" class="pageInfo">Welcome to my very cool website</h4>
+                <h1 id="introTitle" class="pageTitle">John Brisebois</h1>
+                <h4 id="introInfo" class="pageInfo">Hello! Welcome to my website</h4>
                 <div id="introBody" class="pageBody">
-                    Please scroll down. Also the tabs don't work rn.
+                    Here you can find out a bit about me, including projects I've worked on, skillsets, goals, and contact information!  Navigate with the arrows above or by scrolling if you want a quick overview, or get more information with the top menu.
                 </div>
             </div>
             <div id="projectsPage" class="pageitem">
-                <h2 id="projectsTitle" class="pageTitle">Projects</h2>
+                <h1 id="projectsTitle" class="pageTitle">Projects</h1>
                 <h4 id="projectsInfo" class="pageInfo">
                     Some of my more notable projects.
                 </h4>
                 <div id="projectsBody" class="pageBody">
                     <div id="buttonCont" class="buttonCont">
-                        <button class="button">Mordhau Macro</button>
+                        <a href="https://johnjonathonson.github.io/" target="_blank" rel="noopener noreferrer" class="button">
+                            <div class="buttonview buttonText">
+                                Mordhau Macro
+                            </div>
+                            <div class="buttonview">
+                                <img src="box.png" class="buttonImg">
+                            </div>
+                        </a>
                         <p class="buttonInfo">
                             Online tool for coordinating strategies in the video game "Mordhau"
                         </p>
 
-                        <button class="button">Clue Board Game</button>
+                        <a href="https://github.com/JohnBrisebois/CLUE-The-Great-Museum-Caper" target="_blank" rel="noopener noreferrer" class="button">
+                            <div class="buttonview buttonText">
+                                Clue Board Game
+                            </div>
+                            <div class="buttonview">
+                                <img src="box.png" class="buttonImg">
+                            </div>
+                        </a>
                         <p class="buttonInfo">
                             Online multiplayer board game "CLUE: the Great Museum Caper"
                         </p>
 
-                        <button class="button">Assembly Runner</button>
+                        <a href="https://github.com/JohnBrisebois/assembly-runner" target="_blank" rel="noopener noreferrer" class="button">
+                            <div class="buttonview buttonText">
+                                Assembly Runner
+                            </div>
+                            <div class="buttonview">
+                                <img src="box.png" class="buttonImg">
+                            </div>
+                        </a>
                         <p class="buttonInfo">
                             Sidescroller video game made entirely in MIPS assembly language
                         </p>
-                        <button class="button">More</button>
+                        <a href="projects.html" class="button">
+                            <div class="buttonview buttonText">
+                                More
+                            </div>
+                            <div class="buttonview">
+                                <img src="box.png" class="buttonImg">
+                            </div>
+                        </a>
                         <p class="buttonInfo">
                         </p>
                     </div>
@@ -67,11 +104,19 @@
                 </div>
             </div>
             <div id="aboutPage" class="pageitem">
-                <h2 id="aboutTitle" class="pageTitle">About Me</h2>
+                <h1 id="aboutTitle" class="pageTitle">About Me</h1>
                 <h4 id="aboutInfo" class="pageInfo">Aspiring software engineer, student of computer science.</h4>
                 <div id="aboutBody" class="pageBody">
-                    This is where ill write an about me
+                    Computers are an extension of the human mind.  Millions of engineers around the world over the past century have worked together to create the technology we all take for granted today.  While I have contributed in my own small way as a hobby, I look forward to doing the same as a career.
                 </div>
+                <a href="about.html" id="moreAbout" class="button">
+                    <div class="buttonview buttonText">
+                        More
+                    </div>
+                    <div class="buttonview">
+                        <img src="box.png" class="buttonImg">
+                    </div>
+                </a>
             </div>
         </section>
     </div>
