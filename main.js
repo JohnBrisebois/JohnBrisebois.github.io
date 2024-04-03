@@ -6,7 +6,6 @@ var pageArr = document.getElementsByClassName("pageitem");
 var pageIndex = 0;
 pageArr[pageIndex].style.display = "inline";
 page.addEventListener("wheel",scroll);
-page.addEventListener("swipe",scroll);
 down.addEventListener("click", clickDown);
 up.addEventListener("click", clickUp);
 var pageTop = 0;
@@ -26,7 +25,6 @@ function scrollVis(curr) {
         page.addEventListener("wheel", scroll);
         down.addEventListener("click", clickDown);
         up.addEventListener("click", clickUp);
-        page.addEventListener("swipe",scroll);
     }, 300);
 }
 
@@ -45,7 +43,6 @@ function scroll(event) {
         page.removeEventListener("wheel", scroll)
         down.removeEventListener("click", clickDown);
         up.removeEventListener("click", clickUp);
-        page.removeEventListener("swipe",scroll);
         let curr = pageIndex;
         anim = setInterval(function() {scrollAnim(curr, 1)}, 25);
         scrollVis(pageArr[curr])
@@ -56,7 +53,6 @@ function scroll(event) {
         page.removeEventListener("wheel", scroll);
         down.removeEventListener("click", clickDown);
         up.removeEventListener("click", clickUp);
-        page.removeEventListener("swipe",scroll);
         let curr = pageIndex;
         let currTop = pageArr[curr].offsetTop;
         anim = setInterval(function() {scrollAnim(curr, -1)}, 25);
